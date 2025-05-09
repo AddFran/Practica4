@@ -143,7 +143,7 @@ void listaDoble::eliminar(int idEliminar){
     cout<<"ID no encontrado.\n"; 
 }
 void listaDoble::guardarEnArchivo(){
-    ofstream archivo("registros.txt"); 
+    ofstream archivo("registros_le.txt"); 
     Node* current=head; 
     while(current){ 
         archivo<<current->id<<";"<<current->nombre<<";"<<current->correo<<";"<<current->carrera<<";"<<current->anio<<endl;
@@ -152,7 +152,7 @@ void listaDoble::guardarEnArchivo(){
     archivo.close(); 
 }
 void listaDoble::cargarDesdeArchivo(){
-    ifstream archivo("registros.txt"); 
+    ifstream archivo("registros_le.txt"); 
     string linea;
     while(getline(archivo,linea)){ 
         stringstream ss(linea); 

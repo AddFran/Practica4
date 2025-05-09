@@ -170,7 +170,7 @@ void listaDoble::eliminar(int idEliminar){
 }
 // Funcion para guardar la lista en un archivo .txt
 void listaDoble::guardarEnArchivo(){
-    ofstream archivo("registros.txt"); // ofstream: Permite crear o sobreescribir un archivo, en este caso un .txt
+    ofstream archivo("registros_le.txt"); // ofstream: Permite crear o sobreescribir un archivo, en este caso un .txt
     Node* current=head; // Nodo para despalazarnos por la lista
     while(current){ // Nos movemos por la lista
         // En el archivo escribimos cada dato obtenido del nodo current
@@ -181,7 +181,7 @@ void listaDoble::guardarEnArchivo(){
 }
 // Funcion para obtener datos de un archivo .txt
 void listaDoble::cargarDesdeArchivo(){
-    ifstream archivo("registros.txt"); // ifstream: Permite leer datos de archivos
+    ifstream archivo("registros_le.txt"); // ifstream: Permite leer datos de archivos
     string linea; // Cramos un string para almacenar una linea del archivo
     while(getline(archivo,linea)){ // Iterammos linea a linea sobre el archivo que abrimos
         stringstream ss(linea); 

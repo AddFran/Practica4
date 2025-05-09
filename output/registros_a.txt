@@ -1,0 +1,10 @@
+Francesco Quispe Malma;adrianoqm@gmail.com;Ing de Sistemas;2023
+Jose Armando Trujillo Guzman;joseat22@gmail.com;Ing Electronica;2022
+Carlos Eduardo Martinez Garcia;carlosm@outlook.com;Ing Mecatronica;2021
+Maria Fernanda Lopez Ruiz;mariafer@gmail.com;Ing Civil;2022
+Luis Miguel Sanchez Herrera;luis_miguel@hotmail.com;Ing Industrial;2025
+Ana Paola Rodriguez Gonzalez;anapaolar@gmail.com;Ing Quimica;2021
+Javier Alejandro Perez Ortega;javierp@gmail.com;Medicina Humana;2022
+Ricardo Andres Vargas Salazar;ricardovargas@gmail.com;Ing Electronica;2024
+Sofia Elizabeth Garcia Lopez;sofia.g@outlook.com;Arquitectura;2023
+Felipe Antonio Jimenez Martinez;felipe.jimenez@gmail.com;Ing Economica;2021

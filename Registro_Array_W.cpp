@@ -55,7 +55,7 @@ void AgregarEstudiante(HWND hwnd) { // Pasamos como parametro un identificar de 
 }
 // Funcion para guardar el registro en un archivo .txt
 void GuardarArchivo() {
-    ofstream file("registros.txt"); // Creamos (a sobreescribimos) un archivo .txt
+    ofstream file("registros_a.txt"); // Creamos (a sobreescribimos) un archivo .txt
     // Usamos un foreach para crear el archivo
     for(auto& e : lista){ // Creamos una variable automatica "e" que sera una referencia a cada elemento de lista 
         file<<e.nombre<<";"<<e.correo<<";"<<e.carrera<<";"<<e.anio<<"\n"; // Escribimos en cada linea del archivo .txt, accediendo a los datos de cada elemento del array con "e"
@@ -66,7 +66,7 @@ void GuardarArchivo() {
 void CargarArchivo(HWND hwnd){ // Pasamos como parametro
     lista.clear(); // Funcion para limpiar el array
     SendMessage(hLista, LB_RESETCONTENT, 0, 0); // Enviamos un mensaje a la ventana hLista, LB_RESENTCONTENT que limipia todos los elementos de la ventana hLista
-    ifstream file("registros.txt"); // Abrimos el archivo .txt
+    ifstream file("registros_a.txt"); // Abrimos el archivo .txt
     string linea; // Creamos una variable string para guardar toda una linea del archivo
     while(getline(file, linea)){ // Por medio de while y getline obtenemos toda una linea del archivo .txt, en cada iteracion cambia de linea
         stringstream ss(linea); // Guardamos el texto de la linea extraida en ss, por medio de stringstream podremos extraer pedazos de la linea

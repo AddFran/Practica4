@@ -37,7 +37,7 @@ void AgregarEstudiante(HWND hwnd) {
 
 // Guardar en archivo
 void GuardarArchivo() {
-    ofstream file("registros.txt");
+    ofstream file("registros_a.txt");
     for (auto& e : lista) {
         file << e.nombre << ";" << e.correo << ";" << e.carrera << ";" << e.anio << "\n";
     }
@@ -48,7 +48,7 @@ void GuardarArchivo() {
 void CargarArchivo(HWND hwnd) {
     lista.clear();
     SendMessage(hLista, LB_RESETCONTENT, 0, 0);
-    ifstream file("registros.txt");
+    ifstream file("registros_a.txt");
     string linea;
     while (getline(file, linea)) {
         stringstream ss(linea);
